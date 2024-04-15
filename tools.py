@@ -260,7 +260,7 @@ def ajustar_tipo_timestamp(df: DataFrame) -> DataFrame:
     return df
 
 def search_value(df, search_value):
-    filtered_df = b.filter(b["CD_PTOV"] == search_value)
+    filtered_df = df.filter(df["CD_PTOV"] == search_value)
     return filtered_df
 
 def diff_dataframes_ss(df_spark1: DataFrame, df_spark2: DataFrame):
